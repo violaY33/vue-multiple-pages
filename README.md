@@ -19,7 +19,7 @@
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init Plortinus/vue-multiple-pages new-project
+$ vue init violaY33/vue-multiple-pages new-project
 $ cd new-project
 $ npm install
 ```
@@ -35,7 +35,7 @@ visit [http://localhost:8010/user/login.html](http://localhost:8010/user/login.h
 
 visit [http://localhost:8010/user/index.html](http://localhost:8010/user/index.html)
 
-visit [http://localhost:8010/customer/index.html](http://localhost:8010/customer/index.html)
+visit [http://localhost:8010/customer/home/index.html](http://localhost:8010/customer/home/index.html)
 
 #### Build
 
@@ -48,7 +48,7 @@ visit [http://localhost:2333/user/login.html](http://localhost:2333/user/login.h
 
 visit [http://localhost:2333/user/index.html](http://localhost:2333/user/index.html)
 
-visit [http://localhost:2333/customer/index.html](http://localhost:2333/customer/index.html)
+visit [http://localhost:2333/customer/home/index.html](http://localhost:2333/customer/home/index.html)
 
 
 ## Folder Structure
@@ -110,22 +110,22 @@ visit [http://localhost:2333/customer/index.html](http://localhost:2333/customer
     └── pages
         ├── customer
         │   ├── home
-        │   │   ├── app.html
-        │   │   ├── app.js
-        │   │   └── app.vue
+        │   │   ├── index.html
+        │   │   ├── main.js
+        │   │   └── App.vue
         │   └── home2
-        │       ├── app.html
-        │       ├── app.js
-        │       └── app.vue
+        │       ├── index.html
+        │       ├── main.js
+        │       └── App.vue
         └── user
             ├── index
-            │   ├── app.html
-            │   ├── app.js
-            │   └── app.vue
+            │   ├── index.html
+            │   ├── main.js
+            │   └── App.vue
             └── login
-                ├── app.html
-                ├── app.js
-                └── app.vue
+                ├── index.html
+                ├── main.js
+                └── App.vue
 ```
 
 ## Inspired by [element-starter](https://github.com/ElementUI/element-starter)
