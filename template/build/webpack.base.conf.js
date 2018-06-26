@@ -27,17 +27,17 @@ const extractSASS = new ExtractTextPlugin({
 const entries = {}
 const chunks = []
 const htmlWebpackPluginArray = []
-glob.sync('./src/pages/**/app.js').forEach(path => {
-  const chunk = path.split('./src/pages/')[1].split('/app.js')[0]
+glob.sync('./src/pages/**/main.js').forEach(path => {
+  const chunk = path.split('./src/pages/')[1].split('/main.js')[0]
   entries[chunk] = path
   chunks.push(chunk)
 
   const filename = chunk + '.html'
   const htmlConf = {
     filename: filename,
-    template: path.replace(/.js/g, '.html'),
+    template: path.replace(/main.js/g, 'index.html'),
     inject: 'body',
-    favicon: './src/assets/img/logo.png',
+    favicon: './src/assets/imgs/logo.png',
     hash: true,
     chunks: ['commons', chunk]
   }
@@ -161,7 +161,7 @@ const config = {
           loader: 'url-loader',
           options: {
             limit: 10000,
-            name: 'assets/img/[name].[hash:7].[ext]'
+            name: 'assets/imgs/[name].[hash:7].[ext]'
           }
         }]
       }
